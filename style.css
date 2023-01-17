@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #09090A;
+
+    /* place-items and height only work together with the display: grid property */
+    display: grid;
+    place-items: center;
+
+    height: 100vh;
+}
+
+h1 {
+    color: blue;
+}
