@@ -3,17 +3,17 @@
 - [1. Summary](#1-summary)
 - [2. Notes](#2-notes)
 - [3. HTML](#3-html)
-  - [What is HTML?](#what-is-html)
-    - [Hypertext](#hypertext)
-    - [Markup](#markup)
-  - [3.1. Tag syntax](#31-tag-syntax)
-  - [3.2. Atributes](#32-atributes)
-  - [3.3. SVG](#33-svg)
+  - [3.1. What is HTML?](#31-what-is-html)
+    - [3.1.1. Hypertext](#311-hypertext)
+    - [3.1.2. Markup](#312-markup)
+  - [3.2. Tag syntax](#32-tag-syntax)
+  - [3.3. Atributes](#33-atributes)
+  - [3.4. SVG](#34-svg)
 - [4. CSS](#4-css)
-  - [What is CSS?](#what-is-css)
-  - [4.1. Declarations](#41-declarations)
-  - [Specificity](#specificity)
-  - [Box Model](#box-model)
+  - [4.1. What is CSS?](#41-what-is-css)
+  - [4.2. Declarations](#42-declarations)
+  - [4.3. Specificity](#43-specificity)
+  - [4.4. Box Model](#44-box-model)
 
 ---
 
@@ -29,19 +29,19 @@ Hypertext Makerup Language
 
 HTML receive this name because of the linking utility to redirect to other pages.
 
-## What is HTML?
+## 3.1. What is HTML?
 
 HTML is used to create text structures, links, images, videos and other page elements.
 
-### Hypertext
+### 3.1.1. Hypertext
 
 Hypertext refers to texts that contém links. Which mean that they can relate elements from different places.
 
-### Markup
+### 3.1.2. Markup
 
 Markup refers to the tags that'll identify those different elements which will be related to each other.
 
-## 3.1. Tag syntax
+## 3.2. Tag syntax
 
 Tags are written elements used to serve a specific purpose. For example: images, large texts, link, paragraph and so on...
 
@@ -52,7 +52,7 @@ Tags are written elements used to serve a specific purpose. For example: images,
 <!-- Here's a comment -->
 ```
 
-## 3.2. Atributes
+## 3.3. Atributes
 
 Atributes give the configuration and/or information needed from those tags.
 
@@ -91,7 +91,7 @@ We can use emmet to call the basic HTML elements by typing !
 
 - All visible information that will be displayed inside the page are added inside the body division
 
-## 3.3. SVG
+## 3.4. SVG
 
 Is a kind of html used here to import our body element's properties from Figma.
 
@@ -99,11 +99,11 @@ Is a kind of html used here to import our body element's properties from Figma.
 
 Cascading Style Sheets
 
-## What is CSS?
+## 4.1. What is CSS?
 
 CSS refers to all the style implemented to the HTML. It follows a cascading order, which means that all components and properties will consider the last element (unless there are elements of greater calculated value within the list).
 
-## 4.1. Declarations
+## 4.2. Declarations
 
 Declarations dictates which properties and values should be applied to defined HTML element. They declarations that contain properties and values. In order to work they expect a selector that identify where they'll be applied.
 
@@ -122,7 +122,7 @@ h1 {
 
 Obs.: To use hexadecimal color we need to use # before the identificator.
 
-## Specificity
+## 4.3. Specificity
 
 Each selector have a score which adds to each other.
 
@@ -150,7 +150,7 @@ element {
 }
 ```
 
-## Box Model
+## 4.4. Box Model
 
 CSS logic is that everything is a box. This means that all HTML elements will be considered boxes that'll have they're own properties (content, width, height, border, padding - inner space, spacing - outer space).
 
