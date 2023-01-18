@@ -1,4 +1,5 @@
 # 1. Summary
+
 - [1. Summary](#1-summary)
 - [2. Notes](#2-notes)
 - [3. HTML](#3-html)
@@ -15,11 +16,13 @@
   - [Box Model](#box-model)
 
 ---
+
 # 2. Notes
 
 Here we're going to develop a web application to manage habits and daily activities
 
 ---
+
 # 3. HTML
 
 Hypertext Makerup Language
@@ -28,12 +31,14 @@ HTML receive this name because of the linking utility to redirect to other pages
 
 ## What is HTML?
 
-HTML is used to create text structures, links, images, videos and other page elements. 
+HTML is used to create text structures, links, images, videos and other page elements.
 
 ### Hypertext
+
 Hypertext refers to texts that contém links. Which mean that they can relate elements from different places.
 
 ### Markup
+
 Markup refers to the tags that'll identify those different elements which will be related to each other.
 
 ## 3.1. Tag syntax
@@ -54,8 +59,7 @@ Atributes give the configuration and/or information needed from those tags.
 - How to write atributes?
 
 ```html
-<a href="https://rocketseat.com.br">See page</a>
-<img src="image.jpg" />
+<a href="https://rocketseat.com.br">See page</a> <img src="image.jpg" />
 ```
 
 **HTML Example:**
@@ -63,9 +67,7 @@ Atributes give the configuration and/or information needed from those tags.
 ```html
 <h1>Titles</h1>
 
-<p>
-    Paragraf outside the title
-</p>
+<p>Paragraf outside the title</p>
 
 <a href="https://google.com" target="_blank">Link</a>
 ```
@@ -75,15 +77,13 @@ We can use emmet to call the basic HTML elements by typing !
 ```html
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-
-</body>
+  </head>
+  <body></body>
 </html>
 ```
 
@@ -100,6 +100,7 @@ Is a kind of html used here to import our body element's properties from Figma.
 Cascading Style Sheets
 
 ## What is CSS?
+
 CSS refers to all the style implemented to the HTML. It follows a cascading order, which means that all components and properties will consider the last element (unless there are elements of greater calculated value within the list).
 
 ## 4.1. Declarations
@@ -110,19 +111,20 @@ Declarations dictates which properties and values should be applied to defined H
 
 ```css
 body {
-    background-color: #09090A;
-    /* color: white; This will be ignored */
+  background-color: #09090a;
+  /* color: white; This will be ignored */
 }
 
 h1 {
-    color: blue;
+  color: blue;
 }
 ```
 
 Obs.: To use hexadecimal color we need to use # before the identificator.
 
 ## Specificity
-Each selector have a score which adds to each other. 
+
+Each selector have a score which adds to each other.
 
 While applying the style CSS cascating order will first consider those selector's score to define which declaration should have priority.
 
@@ -140,7 +142,7 @@ While applying the style CSS cascating order will first consider those selector'
 .class {
   /* peso 10 */
 }
-````
+```
 
 ```css
 element {
