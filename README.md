@@ -14,6 +14,16 @@
   - [4.2. Declarations](#42-declarations)
   - [4.3. Specificity](#43-specificity)
   - [4.4. Box Model](#44-box-model)
+- [5. JavaScript](#5-javascript)
+  - [5.1. Instructions/declarations](#51-instructionsdeclarations)
+  - [5.2. Syntax](#52-syntax)
+  - [5.3. Variables and types of data](#53-variables-and-types-of-data)
+    - [5.3.1. Variables](#531-variables)
+    - [5.3.2. Data types](#532-data-types)
+  - [5.4. Functions](#54-functions)
+  - [5.5. Objects](#55-objects)
+  - [5.6. DOM](#56-dom)
+    - [5.6.1. Document](#561-document)
 
 ---
 
@@ -155,3 +165,97 @@ element {
 CSS logic is that everything is a box. This means that all HTML elements will be considered boxes that'll have they're own properties (content, width, height, border, padding - inner space, spacing - outer space).
 
 ![CSS Box Model](Screenshots/boxmodel.png)
+
+# 5. JavaScript
+JavaScript is a programming language interpreted and executed by navigators. It uses algorithms, programming logic and sintax to teach the computer. JS is the inteligence of the web triad (CSS, HTML, JS).
+
+JavaScript can be used for web, desktop (Electron), and mobile (React Native).
+
+```JS
+const mensagem = "Bom te ver aqui! "
+
+alert(mensagem + (10 * 100) + " abraços")
+
+// Bom te ver aqui! 1000 abraços
+```
+
+JavaScript can be executed in:
+- Web Devtools
+- Online platforms:
+  - [fronteditor.dev](https://www.fronteditor.dev)
+  - [codepen.io](https://codepen.io/)
+- Project inside a computer
+  
+**OBS.:** In order to use JS in a project he needs to be imported inside the HTML file:
+```HTML
+<!-- em um arquivo index.html -->
+<!-- importamos um arquivo .js no .html -->
+<script src="./script.js"></script>
+```
+
+## 5.1. Instructions/declarations
+It relates to the orders given to the computer. Differently from other programming languages, JS have reserved words that have a specific instruction meaning. For example the variable `const` that specifies the creation of a constant.
+
+## 5.2. Syntax
+Specifies the way, order, indentation in short the syntax will tell how to write the code properly.
+
+## 5.3. Variables and types of data
+
+### 5.3.1. Variables
+Boxes used to store a defined type of data which can be used later on.
+
+### 5.3.2. Data types
+There can be different types of data used inside JS like texts, numbers, booleans (conditions/logic values: true or false), or structured data.
+
+```JS
+// declare and assign value
+let boasVindas = 'Fala, Dev!';
+
+// reassing value
+boasVindas = `Fala, Dev! Tudo beleza?!`;
+
+// constant cannot change the value, it's alread a declaration
+const serHumano = true;
+serHumano = false // Erro!
+```
+
+## 5.4. Functions
+Used to group up and reuse code, there can be lots of fuctions inside a programming language, and they create mini programs inside a bigger program.
+
+```JS
+// using a function
+alert('Fala, Dev!')
+
+// creating a function
+function alert(text) {
+	return text
+}
+```
+
+## 5.5. Objects
+Almost everything is an object:
+- Atributes - means the properties of an object
+- Methods - related to the functionality of an object
+
+```JS
+// creating an object
+const celular = {
+	cor: 'preto',
+	ligar: function() {}
+}
+
+// using an object
+celular.cor // black
+celular.ligar() // execute function
+```
+## 5.6. DOM
+Document Object Model is resposible for modeling all our HTML elements to JS objects.
+
+### 5.6.1. Document
+We can manage and control the page and all HTML documents though JavaScript's object - document.
+
+```JS
+document // object that exists inside all navigators
+.querySelector('a') // selects 'a' tag
+.click() // gives the order to click in the 'a' tag
+```
