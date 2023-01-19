@@ -20,12 +20,12 @@
   - [5.3. Variables and types of data](#53-variables-and-types-of-data)
     - [5.3.1. Variables](#531-variables)
     - [5.3.2. Data types](#532-data-types)
-    - [Arrays](#arrays)
+    - [5.3.3. Arrays](#533-arrays)
   - [5.4. Functions](#54-functions)
   - [5.5. Objects](#55-objects)
   - [5.6. DOM](#56-dom)
     - [5.6.1. Document](#561-document)
-- [Important links](#important-links)
+- [6. Important links](#6-important-links)
 
 ---
 
@@ -237,7 +237,7 @@ serHumano = false // Erro!
 
 **Obs.:** differently from const, let will declare a variable that can be changed throughout the code. The original value is considered as standard if no other value is used.
 
-### Arrays
+### 5.3.3. Arrays
 Is a more complex grouping of data that will receive more can one value inside.
 
 **Example:**
@@ -324,6 +324,10 @@ document // object that exists inside all navigators
 .click() // gives the order to click in the 'a' tag
 ```
 
-# Important links
+---
+# 6. Important links
 
+- [Notion](https://efficient-sloth-d85.notion.site/Trilha-Explorer-4acf33e537f74a059f6e4b6c866d8d6a)
+- [Figma](https://www.figma.com/community/file/1195327109778210238)
+- [Discord](https://discord-service.rocketseat.dev/signin/nlw-setup-explorer)
 - [NLW Setup - Library](https://maykbrito.github.io/libs/NLWSetup/documentation/NLWSetup.html)
