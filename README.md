@@ -20,10 +20,12 @@
   - [5.3. Variables and types of data](#53-variables-and-types-of-data)
     - [5.3.1. Variables](#531-variables)
     - [5.3.2. Data types](#532-data-types)
+    - [Arrays](#arrays)
   - [5.4. Functions](#54-functions)
   - [5.5. Objects](#55-objects)
   - [5.6. DOM](#56-dom)
     - [5.6.1. Document](#561-document)
+- [Important links](#important-links)
 
 ---
 
@@ -167,6 +169,7 @@ CSS logic is that everything is a box. This means that all HTML elements will be
 ![CSS Box Model](Screenshots/boxmodel.png)
 
 # 5. JavaScript
+
 JavaScript is a programming language interpreted and executed by navigators. It uses algorithms, programming logic and sintax to teach the computer. JS is the inteligence of the web triad (CSS, HTML, JS).
 
 JavaScript can be used for web, desktop (Electron), and mobile (React Native).
@@ -180,13 +183,15 @@ alert(mensagem + (10 * 100) + " abraços")
 ```
 
 JavaScript can be executed in:
+
 - Web Devtools
 - Online platforms:
   - [fronteditor.dev](https://www.fronteditor.dev)
   - [codepen.io](https://codepen.io/)
 - Project inside a computer
-  
+
 **OBS.:** In order to use JS in a project he needs to be imported inside the HTML file:
+
 ```HTML
 <!-- em um arquivo index.html -->
 <!-- importamos um arquivo .js no .html -->
@@ -194,17 +199,28 @@ JavaScript can be executed in:
 ```
 
 ## 5.1. Instructions/declarations
+
 It relates to the orders given to the computer. Differently from other programming languages, JS have reserved words that have a specific instruction meaning. For example the variable `const` that specifies the creation of a constant.
 
 ## 5.2. Syntax
+
 Specifies the way, order, indentation in short the syntax will tell how to write the code properly.
 
 ## 5.3. Variables and types of data
 
 ### 5.3.1. Variables
+
 Boxes used to store a defined type of data which can be used later on.
 
+**Important:** variables name cannot:
+- start with numbers
+- have space between
+- use special caracters
+
+The most common use to writting variables is by using the **camelCase** format.
+
 ### 5.3.2. Data types
+
 There can be different types of data used inside JS like texts, numbers, booleans (conditions/logic values: true or false), or structured data.
 
 ```JS
@@ -219,7 +235,24 @@ const serHumano = true;
 serHumano = false // Erro!
 ```
 
+**Obs.:** differently from const, let will declare a variable that can be changed throughout the code. The original value is considered as standard if no other value is used.
+
+### Arrays
+Is a more complex grouping of data that will receive more can one value inside.
+
+**Example:**
+```JS
+// here the array run, located inside the variable data, assumes 3 different values
+
+const data = {
+  run: ['01-01', '01-02', '01-06']
+}
+```
+
+**Obs.:** instead of the values, arrays can also accept variables inside of it.
+
 ## 5.4. Functions
+
 Used to group up and reuse code, there can be lots of fuctions inside a programming language, and they create mini programs inside a bigger program.
 
 ```JS
@@ -232,8 +265,34 @@ function alert(text) {
 }
 ```
 
+We can call specific properties inside a function by doing this:
+
+```JS
+const celular = {
+  color: 'preto',
+  call: function() {
+    const message = "Calling"
+    alert(message)
+  }
+}
+
+// It will return the celular color property
+celular.color
+```
+
+We can also call the function in order to execute it by entering:
+
+```JS
+// It will execute the function call inside celular variable
+celular.call()
+```
+
+By calling this function we now have a method
+
 ## 5.5. Objects
+
 Almost everything is an object:
+
 - Atributes - means the properties of an object
 - Methods - related to the functionality of an object
 
@@ -248,10 +307,15 @@ const celular = {
 celular.cor // black
 celular.ligar() // execute function
 ```
+
+**Obs.:** everything that is before . is an object. Celular, in the example above, is the object.
+
 ## 5.6. DOM
+
 Document Object Model is resposible for modeling all our HTML elements to JS objects.
 
 ### 5.6.1. Document
+
 We can manage and control the page and all HTML documents though JavaScript's object - document.
 
 ```JS
@@ -259,3 +323,7 @@ document // object that exists inside all navigators
 .querySelector('a') // selects 'a' tag
 .click() // gives the order to click in the 'a' tag
 ```
+
+# Important links
+
+- [NLW Setup - Library](https://maykbrito.github.io/libs/NLWSetup/documentation/NLWSetup.html)
