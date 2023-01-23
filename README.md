@@ -25,6 +25,10 @@
   - [5.5. Objects](#55-objects)
   - [5.6. DOM](#56-dom)
     - [5.6.1. Document](#561-document)
+- [Git](#git)
+  - [Basic concepts](#basic-concepts)
+  - [Commands](#commands)
+- [Github](#github)
 - [6. Important links](#6-important-links)
 
 ---
@@ -323,6 +327,26 @@ document // object that exists inside all navigators
 .querySelector('a') // selects 'a' tag
 .click() // gives the order to click in the 'a' tag
 ```
+
+---
+# Git
+Git is a version controller, it will store all your projects timeline and history. This version is store inside your own machine by creating a repository.
+
+## Basic concepts
+Git allows you to manage code changes and versions, it makes possible to stage different changes before actually commiting it remotelly
+
+## Commands
+'git init' - initialize the project repository
+
+'git add .' - add all actual changes to the stage area
+
+'git commit -m "message here"' - execute the commit
+
+git push
+
+---
+# Github
+Is a online plataform we're all projects and portfolios are shared. Github allows your, until now, local repository to be stored remotelly, makig it possible to access this code from wherever you want to and sharing it with other people as well.
 
 ---
 # 6. Important links
